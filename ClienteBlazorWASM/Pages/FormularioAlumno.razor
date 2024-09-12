@@ -1,0 +1,217 @@
+﻿@page "/crear-alumno"
+@page "/editar-alumno/{CodigoAEditar:int}"
+
+@using ClienteBlazorWASM.Models;
+@using ClienteBlazorWASM.Servicios.IServicio;
+@using System.Net.Http.Headers;
+@using ClienteBlazorWASM.Shared;
+@inject IAlumnoServicio alumnoServicio
+@inject IDepartamentoServicio departamentoServicio;
+@inject IProvinciaServicio provinciaServicio;
+@inject IDistritoServicio distritoServicio;
+@inject NavigationManager navigationManager
+
+<div class="card">
+    <div class="card-header">
+        <div class="row">
+            <div class="col-7">
+                <h4 class="card-title text-dark">@(modoEdicion ? "Editar Alumno" : "Agregar Alumno")</h4>
+            </div>
+        </div>
+    </div>
+
+    @if(cargando){
+        <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Cargando...</span>
+            </div>
+            <p class="ms-3">Cargando...</p>
+        </div>
+    }
+    else
+    {
+        <div class="card-body">
+            <EditForm Model="NuevoAlumno" OnSubmit="@( () => ManejadorOnCrearAlumno())">
+                @if (validationErrors.Any())
+                {
+                    <div class="alert alert-danger">
+                        <ul class="validation-errors">
+                            @foreach (var error in validationErrors)
+                            {
+                                <li class="validation-message">@error</li>
+                            }
+                        </ul>
+                    </div>
+                }
+                <div class="container">
+
+                    <FormGroup Label="DNI">
+                        <InputNumber @bind-Value="NuevoAlumno.DNI" class="form-control" placeholder="Ingresa el DNI"></InputNumber>
+                    </FormGroup>
+
+                    <FormGroup Label="Nombres">
+                        <InputText @bind-Value="NuevoAlumno.Nombres" class="form-control" placeholder="Ingresa el nombre"></InputText>
+                    </FormGroup>
+
+                    <FormGroup Label="Apellidos">
+                        <InputText @bind-Value="NuevoAlumno.Apellidos" class="form-control" placeholder="Ingresa los apellidos"></InputText>
+                    </FormGroup>
+
+                    <FormGroup Label="Sexo">
+                        <InputRadioGroup @bind-Value="NuevoAlumno.Sexo" class="form-control">
+                            <InputRadio Value="'M'" /> Masculino
+                            <InputRadio Value="'F'" /> Femenino
+                        </InputRadioGroup>
+                    </FormGroup>
+
+                    <FormGroup Label="Fecha de Nacimiento">
+                        <InputDate @bind-Value="NuevoAlumno.FechaNacimiento" class="form-control" placeholder="Selecciona la fecha de nacimiento"></InputDate>
+                    </FormGroup>
+
+                    <FormGroup Label="Edad">
+                        <InputNumber @bind-Value="NuevoAlumno.Edad" class="form-control" placeholder="Ingresa la edad"></InputNumber>
+                    </FormGroup>
+
+                    <FormGroup Label="Fecha de Ingreso">
+                        <InputDate @bind-Value="NuevoAlumno.FechaIngreso" class="form-control" placeholder="Selecciona la fecha de ingreso"></InputDate>
+                    </FormGroup>
+
+                    <FormGroup Label="Nacionalidad">
+                        <InputText @bind-Value="NuevoAlumno.Nacionalidad" class="form-control" placeholder="Ingresa la nacionalidad"></InputText>
+                    </FormGroup>
+
+                    <FormGroup Label="Departamento">
+                        <select @bind:get="NuevoAlumno.DepartamentoId" @bind:set="OnDepartamentoChanged" class="form-control">
+                            <option value="0">Seleccione un departamento</option>
+                            @foreach (var departamento in departamentos)
+                            {
+                                <option value="@departamento.Id">@departamento.Nombre</option>
+                            }
+                        </select>
+                    </FormGroup>
+
+                    <FormGroup Label="Provincia">
+                        <select @bind:get="NuevoAlumno.ProvinciaId" @bind:set="OnProvinciaChanged" class="form-control" disabled="@(NuevoAlumno.DepartamentoId == 0)">
+                            <option value="0">Seleccione una provincia</option>
+                            @foreach (var provincia in provinciasFiltradas)
+                            {
+                                <option value="@provincia.Id">@provincia.Nombre</option>
+                            }
+                        </select>
+                    </FormGroup>
+
+                    <FormGroup Label="Distrito">
+                        <select @bind="NuevoAlumno.DistritoId" class="form-control" disabled="@(NuevoAlumno.ProvinciaId == 0 || NuevoAlumno.DepartamentoId == 0)">
+                            <option value="0">Seleccione un distrito</option>
+                            @foreach (var distrito in distritosFiltrados)
+                            {
+                                <option value="@distrito.Id">@distrito.Nombre</option>
+                            }
+                        </select>
+                    </FormGroup>
+
+                    <FormGroup Label="Domicilio">
+                        <InputText @bind-Value="NuevoAlumno.Domicilio" class="form-control" placeholder="Ingresa el domicilio"></InputText>
+                    </FormGroup>
+
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-2">
+                                <button type="submit" class="btn btn-success"><i class="bi bi-check-circle-fill"></i>&nbsp; @(modoEdicion ? "Editar Alumno" : "Agregar Alumno")</button>
+                            </div>
+                            <div class="col-6">
+                                <NavLink href="alumnos" class="btn btn-secondary"><i class="bi bi-arrow-left-circle-fill"></i>&nbsp; Volver atrás</NavLink>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </EditForm>
+
+        </div>
+    }
+    
+</div>
+
+@code {
+    [Parameter]
+    public int? CodigoAEditar { get; set; }
+
+    private bool modoEdicion => CodigoAEditar.HasValue;
+    private bool cargando = true;
+    private Alumno NuevoAlumno { get; set; } = new Alumno();
+    private IEnumerable<Departamento> departamentos { get; set; } = new List<Departamento>();
+    private IEnumerable<Provincia> provincias { get; set; } = new List<Provincia>();
+    private IEnumerable<Distrito> distritos { get; set; } = new List<Distrito>();
+    private IEnumerable<Provincia> provinciasFiltradas { get; set; } = new List<Provincia>();
+    private IEnumerable<Distrito> distritosFiltrados { get; set; } = new List<Distrito>();
+    private List<string> validationErrors = new List<string>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        departamentos = await departamentoServicio.GetDepartamentos();
+        provincias = await provinciaServicio.GetProvincias();
+        distritos = await distritoServicio.GetDistritos();
+
+        if (modoEdicion)
+        {
+            NuevoAlumno = await alumnoServicio.GetAlumno(CodigoAEditar.Value);
+            provinciasFiltradas = provincias.Where(p => p.DepartamentoId == NuevoAlumno.DepartamentoId);
+            distritosFiltrados = distritos.Where(d => d.ProvinciaId == NuevoAlumno.ProvinciaId);
+        }
+
+        cargando = false;
+    }
+
+    private void OnDepartamentoChanged(int departamentoId)
+    {
+        NuevoAlumno.DepartamentoId = departamentoId;
+        NuevoAlumno.ProvinciaId = 0;
+        provinciasFiltradas = provincias.Where(p => p.DepartamentoId == NuevoAlumno.DepartamentoId);
+        NuevoAlumno.DistritoId = 0;
+        distritosFiltrados = distritos.Where(d => d.ProvinciaId == 0);
+    }
+
+    private void OnProvinciaChanged(int provinciaId)
+    {
+        NuevoAlumno.ProvinciaId = provinciaId;
+        NuevoAlumno.DistritoId = 0;
+        distritosFiltrados = distritos.Where(d => d.ProvinciaId == provinciaId);
+    }
+
+    private async Task ManejadorOnCrearAlumno()
+    {
+        validationErrors.Clear();
+
+        if (NuevoAlumno.DNI == 0) validationErrors.Add("Debe ingresar un DNI");
+        if (string.IsNullOrEmpty(NuevoAlumno.Nombres)) validationErrors.Add("Debe ingresar los nombres");
+        if (string.IsNullOrEmpty(NuevoAlumno.Apellidos)) validationErrors.Add("Debe ingresar los apellidos");
+        if (NuevoAlumno.Sexo != 'M' && NuevoAlumno.Sexo != 'F') validationErrors.Add("Debe seleccionar el sexo");
+        if (NuevoAlumno.FechaNacimiento == DateTime.MinValue) validationErrors.Add("Debe ingresar la fecha de nacimiento");
+        if (NuevoAlumno.Edad == 0) validationErrors.Add("Debe ingresar la edad");
+        if (NuevoAlumno.FechaIngreso == DateTime.MinValue) validationErrors.Add("Debe ingresar la fecha de ingreso");
+        if (string.IsNullOrEmpty(NuevoAlumno.Nacionalidad)) validationErrors.Add("Debe ingresar la nacionalidad");
+        if (NuevoAlumno.DepartamentoId == 0) validationErrors.Add("Debe seleccionar el departamento");
+        if (NuevoAlumno.ProvinciaId == 0) validationErrors.Add("Debe seleccionar la provincia");
+        if (NuevoAlumno.DistritoId == 0) validationErrors.Add("Debe seleccionar el distrito");
+        if (string.IsNullOrEmpty(NuevoAlumno.Domicilio)) validationErrors.Add("Debe ingresar el domicilio");
+
+        if(validationErrors.Any()){
+            StateHasChanged();
+            return;
+        }
+
+        if(modoEdicion){
+            var editarAlumno = await alumnoServicio.ActualizarAlumno(NuevoAlumno.Codigo, NuevoAlumno);
+        }
+        else
+        {
+            var crearAlumno = await alumnoServicio.CrearAlumno(NuevoAlumno);
+        }
+        navigationManager.NavigateTo("alumnos");
+    }
+
+
+}
+
+

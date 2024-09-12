@@ -1,0 +1,169 @@
+﻿@page "/alumnos"
+@using ClienteBlazorWASM.Models
+@using ClienteBlazorWASM.Servicios.IServicio
+@using ClienteBlazorWASM.Shared
+
+@inject IAlumnoServicio alumnoServicio;
+@inject IDepartamentoServicio departamentoServicio;
+@inject IProvinciaServicio provinciaServicio;
+@inject IDistritoServicio distritoServicio;
+@inject IJSRuntime JSRuntime;
+
+<PageTitle>Alumnos</PageTitle>
+
+<div class="container">
+    <div class="form-group">
+        <div class="row mb-3">
+            <div class="col-12 col-md-4">
+                <label>DNI:</label>
+                <InputText @bind-Value="DNIFiltro" class="form-control" placeholder="Busca por DNI"></InputText>
+            </div>
+            <div class="col-12 col-md-4">
+                <label>Nombres:</label>
+                <InputText @bind-Value="NombreFiltro" class="form-control" placeholder="Busca por nombres"></InputText>
+            </div>
+            <div class="col-12 col-md-4">
+                <label>Apellidos:</label>
+                <InputText @bind-Value="ApellidoFiltro" class="form-control" placeholder="Busca por apellidos"></InputText>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <button @onclick="Filtrar" class="btn btn-success">
+                    <i class="bi bi-funnel-fill" style="color: white;"></i>&nbsp; Filtrar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="card">
+    <div class="card-header">
+        <div class="row">
+            <div class="col-7">
+                <h4 class="card-title text-dark">Lista de alumnos</h4>
+            </div>
+            <div class="col-3 offset-2">
+                <NavLink href="crear-alumno" class="btn btn-primary"><i class="bi bi-plus-circle-fill"></i>&nbsp; Agregar alumno</NavLink>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <table class="table table-bordered table-hover">
+            <thead>
+				<tr>
+					<th>Código</th>
+                    <th>DNI</th>
+					<th>Nombres</th>
+					<th>Apellidos</th>
+                    <th>Sexo</th>
+                    <th>Fecha de nacimiento</th>
+					<th>Edad</th>
+                    <th>Fecha de ingreso</th>
+                    <th>Nacionalidad</th>
+                    <th>Departamento</th>
+                    <th>Provincia</th>
+                    <th>Distrito</th>
+                    <th>Domicilio</th>
+                    <th>Opciones</th>
+				</tr>
+            </thead>
+            <tbody>
+                @if (alumnos.Count() > 0)
+                {
+                    @foreach (var alumno in alumnos)
+					{
+						<tr>
+							<td>@alumno.Codigo</td>
+                            <td>@alumno.DNI</td>
+							<td>@alumno.Nombres</td>
+							<td>@alumno.Apellidos</td>
+                            <td>@alumno.Sexo</td>
+                            <td>@alumno.FechaNacimiento.ToString("d")</td>
+							<td>@alumno.Edad</td>
+                            <td>@alumno.FechaIngreso.ToString("d")</td>
+                            <td>@alumno.Nacionalidad</td>
+                            <td>@departamentoNombres[alumno.DepartamentoId]</td>
+                            <td>@provinciaNombres[alumno.ProvinciaId]</td>
+                            <td>@distritoNombres[alumno.DistritoId]</td>
+                            <td>@alumno.Domicilio</td>
+                            <td>
+                                <NavLink href="@($"editar-alumno/{alumno.Codigo}")" class="btn btn-success"><i class="bi bi-gear-fill"></i>&nbsp; Editar</NavLink>
+                                <button class="btn btn-danger" @onclick="()=>ManejadorOnBorrar(alumno.Codigo)"><i class="bi bi-trash-fill"></i>&nbsp; Borrar</button>
+                            </td>
+						</tr>
+					}
+				}
+				else
+				{
+					<tr>
+						<td colspan="14">Cargando alumnos...</td>
+					</tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<ConfirmacionBorrado ProcesandoComponentePadre="estaProcesando" CambioConfirmacion="Click_Confirmacion_Borrado"></ConfirmacionBorrado>
+
+@code {
+    private IEnumerable<Alumno> alumnos { get; set; } = new List<Alumno>();
+    private IEnumerable<Departamento> departamentos {get; set; } = new List<Departamento>();
+    private IEnumerable<Provincia> provincias { get; set; } = new List<Provincia>();
+    private IEnumerable<Distrito> distritos { get; set; } = new List<Distrito>();
+    private bool estaProcesando { get; set; } = false;
+    private int BorrarCodigoAlumno { get; set; } = 0;
+    private Dictionary<int, string> departamentoNombres { get; set; } = new Dictionary<int, string>();
+    private Dictionary<int, string> provinciaNombres { get; set; } = new Dictionary<int, string>();
+    private Dictionary<int, string> distritoNombres { get; set; } = new Dictionary<int, string>();
+    private string DNIFiltro;
+    private String NombreFiltro;
+    private String ApellidoFiltro;
+
+    protected override async Task OnInitializedAsync()
+    {
+        alumnos = await alumnoServicio.GetAlumnos();
+        departamentos = await departamentoServicio.GetDepartamentos();
+        departamentoNombres = departamentos.ToDictionary(d => d.Id, d => d.Nombre);
+        provincias = await provinciaServicio.GetProvincias();
+        provinciaNombres = provincias.ToDictionary(p => p.Id, p => p.Nombre);
+        distritos = await distritoServicio.GetDistritos();
+        distritoNombres = distritos.ToDictionary(d => d.Id, d => d.Nombre);
+
+    }
+
+    public async Task Filtrar()
+    {
+        if (string.IsNullOrEmpty(DNIFiltro))
+        {
+            alumnos = await alumnoServicio.GetAlumnos(null, NombreFiltro, ApellidoFiltro);
+        }
+        else
+        {
+            alumnos = await alumnoServicio.GetAlumnos(Int32.Parse(DNIFiltro), NombreFiltro, ApellidoFiltro);
+        }
+        StateHasChanged();
+    }
+
+    public async Task ManejadorOnBorrar(int codigo)
+    {
+        BorrarCodigoAlumno = codigo;
+        await JSRuntime.InvokeVoidAsync("MostrarModalConfirmacionBorrado");
+    }
+
+    public async Task Click_Confirmacion_Borrado(bool confirmado)
+    {
+        estaProcesando = true;
+
+        if(confirmado && BorrarCodigoAlumno != 0){
+            await alumnoServicio.EliminarAlumno(BorrarCodigoAlumno);
+            var alumnoAEliminar = alumnos.FirstOrDefault(a => a.Codigo == BorrarCodigoAlumno);
+            alumnos = alumnos.Where(a => a.Codigo != BorrarCodigoAlumno);
+            StateHasChanged();
+        }
+
+        await JSRuntime.InvokeVoidAsync("OcultarModalConfirmacionBorrado");
+        estaProcesando = false;
+    }
+
+}

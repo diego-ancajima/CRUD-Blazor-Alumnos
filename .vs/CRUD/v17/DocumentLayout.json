@@ -1,0 +1,479 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\diego\\Desktop\\CRUD\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4A6DAA1D-A6F9-48B8-84E0-CF7BE989D818}|API\\API.csproj|c:\\users\\diego\\desktop\\crud\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A6DAA1D-A6F9-48B8-84E0-CF7BE989D818}|API\\API.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EA3315D-DE69-4F20-8865-0B1D8A679F1D}|ClienteBlazorWASM\\ClienteBlazorWASM.csproj|c:\\users\\diego\\desktop\\crud\\clienteblazorwasm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EA3315D-DE69-4F20-8865-0B1D8A679F1D}|ClienteBlazorWASM\\ClienteBlazorWASM.csproj|solutionrelative:clienteblazorwasm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EA3315D-DE69-4F20-8865-0B1D8A679F1D}|ClienteBlazorWASM\\ClienteBlazorWASM.csproj|c:\\users\\diego\\desktop\\crud\\clienteblazorwasm\\servicios\\alumnoservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EA3315D-DE69-4F20-8865-0B1D8A679F1D}|ClienteBlazorWASM\\ClienteBlazorWASM.csproj|solutionrelative:clienteblazorwasm\\servicios\\alumnoservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EA3315D-DE69-4F20-8865-0B1D8A679F1D}|ClienteBlazorWASM\\ClienteBlazorWASM.csproj|c:\\users\\diego\\desktop\\crud\\clienteblazorwasm\\pages\\formularioalumno.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2EA3315D-DE69-4F20-8865-0B1D8A679F1D}|ClienteBlazorWASM\\ClienteBlazorWASM.csproj|solutionrelative:clienteblazorwasm\\pages\\formularioalumno.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EA3315D-DE69-4F20-8865-0B1D8A679F1D}|ClienteBlazorWASM\\ClienteBlazorWASM.csproj|c:\\users\\diego\\desktop\\crud\\clienteblazorwasm\\pages\\alumnos.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2EA3315D-DE69-4F20-8865-0B1D8A679F1D}|ClienteBlazorWASM\\ClienteBlazorWASM.csproj|solutionrelative:clienteblazorwasm\\pages\\alumnos.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EA3315D-DE69-4F20-8865-0B1D8A679F1D}|ClienteBlazorWASM\\ClienteBlazorWASM.csproj|c:\\users\\diego\\desktop\\crud\\clienteblazorwasm\\shared\\formgroup.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2EA3315D-DE69-4F20-8865-0B1D8A679F1D}|ClienteBlazorWASM\\ClienteBlazorWASM.csproj|solutionrelative:clienteblazorwasm\\shared\\formgroup.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EA3315D-DE69-4F20-8865-0B1D8A679F1D}|ClienteBlazorWASM\\ClienteBlazorWASM.csproj|c:\\users\\diego\\desktop\\crud\\clienteblazorwasm\\wwwroot\\js\\common.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{2EA3315D-DE69-4F20-8865-0B1D8A679F1D}|ClienteBlazorWASM\\ClienteBlazorWASM.csproj|solutionrelative:clienteblazorwasm\\wwwroot\\js\\common.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EA3315D-DE69-4F20-8865-0B1D8A679F1D}|ClienteBlazorWASM\\ClienteBlazorWASM.csproj|c:\\users\\diego\\desktop\\crud\\clienteblazorwasm\\shared\\confirmacionborrado.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2EA3315D-DE69-4F20-8865-0B1D8A679F1D}|ClienteBlazorWASM\\ClienteBlazorWASM.csproj|solutionrelative:clienteblazorwasm\\shared\\confirmacionborrado.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A6DAA1D-A6F9-48B8-84E0-CF7BE989D818}|API\\API.csproj|c:\\users\\diego\\desktop\\crud\\api\\controllers\\alumnoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A6DAA1D-A6F9-48B8-84E0-CF7BE989D818}|API\\API.csproj|solutionrelative:api\\controllers\\alumnoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A6DAA1D-A6F9-48B8-84E0-CF7BE989D818}|API\\API.csproj|c:\\users\\diego\\desktop\\crud\\api\\repositorio\\alumnorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A6DAA1D-A6F9-48B8-84E0-CF7BE989D818}|API\\API.csproj|solutionrelative:api\\repositorio\\alumnorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A6DAA1D-A6F9-48B8-84E0-CF7BE989D818}|API\\API.csproj|c:\\users\\diego\\desktop\\crud\\api\\repositorio\\irepositorio\\ialumnorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A6DAA1D-A6F9-48B8-84E0-CF7BE989D818}|API\\API.csproj|solutionrelative:api\\repositorio\\irepositorio\\ialumnorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A6DAA1D-A6F9-48B8-84E0-CF7BE989D818}|API\\API.csproj|c:\\users\\diego\\desktop\\crud\\api\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A6DAA1D-A6F9-48B8-84E0-CF7BE989D818}|API\\API.csproj|solutionrelative:api\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A6DAA1D-A6F9-48B8-84E0-CF7BE989D818}|API\\API.csproj|c:\\users\\diego\\desktop\\crud\\api\\mappers\\apimapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A6DAA1D-A6F9-48B8-84E0-CF7BE989D818}|API\\API.csproj|solutionrelative:api\\mappers\\apimapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A6DAA1D-A6F9-48B8-84E0-CF7BE989D818}|API\\API.csproj|c:\\users\\diego\\desktop\\crud\\api\\models\\dtos\\alumnodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A6DAA1D-A6F9-48B8-84E0-CF7BE989D818}|API\\API.csproj|solutionrelative:api\\models\\dtos\\alumnodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A6DAA1D-A6F9-48B8-84E0-CF7BE989D818}|API\\API.csproj|c:\\users\\diego\\desktop\\crud\\api\\models\\dtos\\provinciadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A6DAA1D-A6F9-48B8-84E0-CF7BE989D818}|API\\API.csproj|solutionrelative:api\\models\\dtos\\provinciadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A6DAA1D-A6F9-48B8-84E0-CF7BE989D818}|API\\API.csproj|c:\\users\\diego\\desktop\\crud\\api\\models\\dtos\\distritodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A6DAA1D-A6F9-48B8-84E0-CF7BE989D818}|API\\API.csproj|solutionrelative:api\\models\\dtos\\distritodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A6DAA1D-A6F9-48B8-84E0-CF7BE989D818}|API\\API.csproj|c:\\users\\diego\\desktop\\crud\\api\\models\\dtos\\departamentodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A6DAA1D-A6F9-48B8-84E0-CF7BE989D818}|API\\API.csproj|solutionrelative:api\\models\\dtos\\departamentodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A6DAA1D-A6F9-48B8-84E0-CF7BE989D818}|API\\API.csproj|c:\\users\\diego\\desktop\\crud\\api\\models\\provincia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A6DAA1D-A6F9-48B8-84E0-CF7BE989D818}|API\\API.csproj|solutionrelative:api\\models\\provincia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A6DAA1D-A6F9-48B8-84E0-CF7BE989D818}|API\\API.csproj|c:\\users\\diego\\desktop\\crud\\api\\models\\distrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A6DAA1D-A6F9-48B8-84E0-CF7BE989D818}|API\\API.csproj|solutionrelative:api\\models\\distrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A6DAA1D-A6F9-48B8-84E0-CF7BE989D818}|API\\API.csproj|c:\\users\\diego\\desktop\\crud\\api\\models\\departamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A6DAA1D-A6F9-48B8-84E0-CF7BE989D818}|API\\API.csproj|solutionrelative:api\\models\\departamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A6DAA1D-A6F9-48B8-84E0-CF7BE989D818}|API\\API.csproj|c:\\users\\diego\\desktop\\crud\\api\\models\\alumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A6DAA1D-A6F9-48B8-84E0-CF7BE989D818}|API\\API.csproj|solutionrelative:api\\models\\alumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EA3315D-DE69-4F20-8865-0B1D8A679F1D}|ClienteBlazorWASM\\ClienteBlazorWASM.csproj|c:\\users\\diego\\desktop\\crud\\clienteblazorwasm\\models\\provincia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EA3315D-DE69-4F20-8865-0B1D8A679F1D}|ClienteBlazorWASM\\ClienteBlazorWASM.csproj|solutionrelative:clienteblazorwasm\\models\\provincia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EA3315D-DE69-4F20-8865-0B1D8A679F1D}|ClienteBlazorWASM\\ClienteBlazorWASM.csproj|c:\\users\\diego\\desktop\\crud\\clienteblazorwasm\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2EA3315D-DE69-4F20-8865-0B1D8A679F1D}|ClienteBlazorWASM\\ClienteBlazorWASM.csproj|solutionrelative:clienteblazorwasm\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EA3315D-DE69-4F20-8865-0B1D8A679F1D}|ClienteBlazorWASM\\ClienteBlazorWASM.csproj|c:\\users\\diego\\desktop\\crud\\clienteblazorwasm\\models\\alumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EA3315D-DE69-4F20-8865-0B1D8A679F1D}|ClienteBlazorWASM\\ClienteBlazorWASM.csproj|solutionrelative:clienteblazorwasm\\models\\alumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EA3315D-DE69-4F20-8865-0B1D8A679F1D}|ClienteBlazorWASM\\ClienteBlazorWASM.csproj|c:\\users\\diego\\desktop\\crud\\clienteblazorwasm\\models\\modeloerror.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EA3315D-DE69-4F20-8865-0B1D8A679F1D}|ClienteBlazorWASM\\ClienteBlazorWASM.csproj|solutionrelative:clienteblazorwasm\\models\\modeloerror.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EA3315D-DE69-4F20-8865-0B1D8A679F1D}|ClienteBlazorWASM\\ClienteBlazorWASM.csproj|c:\\users\\diego\\desktop\\crud\\clienteblazorwasm\\models\\distrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EA3315D-DE69-4F20-8865-0B1D8A679F1D}|ClienteBlazorWASM\\ClienteBlazorWASM.csproj|solutionrelative:clienteblazorwasm\\models\\distrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EA3315D-DE69-4F20-8865-0B1D8A679F1D}|ClienteBlazorWASM\\ClienteBlazorWASM.csproj|c:\\users\\diego\\desktop\\crud\\clienteblazorwasm\\models\\departamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EA3315D-DE69-4F20-8865-0B1D8A679F1D}|ClienteBlazorWASM\\ClienteBlazorWASM.csproj|solutionrelative:clienteblazorwasm\\models\\departamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\diego\\Desktop\\CRUD\\API\\Program.cs",
+              "RelativeDocumentMoniker": "API\\Program.cs",
+              "ToolTip": "C:\\Users\\diego\\Desktop\\CRUD\\API\\Program.cs",
+              "RelativeToolTip": "API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T23:03:19.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\diego\\Desktop\\CRUD\\ClienteBlazorWASM\\Program.cs",
+              "RelativeDocumentMoniker": "ClienteBlazorWASM\\Program.cs",
+              "ToolTip": "C:\\Users\\diego\\Desktop\\CRUD\\ClienteBlazorWASM\\Program.cs",
+              "RelativeToolTip": "ClienteBlazorWASM\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T23:03:17.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AlumnoServicio.cs",
+              "DocumentMoniker": "C:\\Users\\diego\\Desktop\\CRUD\\ClienteBlazorWASM\\Servicios\\AlumnoServicio.cs",
+              "RelativeDocumentMoniker": "ClienteBlazorWASM\\Servicios\\AlumnoServicio.cs",
+              "ToolTip": "C:\\Users\\diego\\Desktop\\CRUD\\ClienteBlazorWASM\\Servicios\\AlumnoServicio.cs",
+              "RelativeToolTip": "ClienteBlazorWASM\\Servicios\\AlumnoServicio.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T23:03:14.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "common.js",
+              "DocumentMoniker": "C:\\Users\\diego\\Desktop\\CRUD\\ClienteBlazorWASM\\wwwroot\\js\\common.js",
+              "RelativeDocumentMoniker": "ClienteBlazorWASM\\wwwroot\\js\\common.js",
+              "ToolTip": "C:\\Users\\diego\\Desktop\\CRUD\\ClienteBlazorWASM\\wwwroot\\js\\common.js",
+              "RelativeToolTip": "ClienteBlazorWASM\\wwwroot\\js\\common.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-12T22:58:05.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IAlumnoRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\diego\\Desktop\\CRUD\\API\\Repositorio\\IRepositorio\\IAlumnoRepositorio.cs",
+              "RelativeDocumentMoniker": "API\\Repositorio\\IRepositorio\\IAlumnoRepositorio.cs",
+              "ToolTip": "C:\\Users\\diego\\Desktop\\CRUD\\API\\Repositorio\\IRepositorio\\IAlumnoRepositorio.cs",
+              "RelativeToolTip": "API\\Repositorio\\IRepositorio\\IAlumnoRepositorio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T22:54:33.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AlumnoRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\diego\\Desktop\\CRUD\\API\\Repositorio\\AlumnoRepositorio.cs",
+              "RelativeDocumentMoniker": "API\\Repositorio\\AlumnoRepositorio.cs",
+              "ToolTip": "C:\\Users\\diego\\Desktop\\CRUD\\API\\Repositorio\\AlumnoRepositorio.cs",
+              "RelativeToolTip": "API\\Repositorio\\AlumnoRepositorio.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T22:54:29.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AlumnosController.cs",
+              "DocumentMoniker": "C:\\Users\\diego\\Desktop\\CRUD\\API\\Controllers\\AlumnosController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\AlumnosController.cs",
+              "ToolTip": "C:\\Users\\diego\\Desktop\\CRUD\\API\\Controllers\\AlumnosController.cs",
+              "RelativeToolTip": "API\\Controllers\\AlumnosController.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T22:54:17.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\diego\\Desktop\\CRUD\\API\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "API\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\diego\\Desktop\\CRUD\\API\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "API\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T22:54:12.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "APIMapper.cs",
+              "DocumentMoniker": "C:\\Users\\diego\\Desktop\\CRUD\\API\\Mappers\\APIMapper.cs",
+              "RelativeDocumentMoniker": "API\\Mappers\\APIMapper.cs",
+              "ToolTip": "C:\\Users\\diego\\Desktop\\CRUD\\API\\Mappers\\APIMapper.cs",
+              "RelativeToolTip": "API\\Mappers\\APIMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T22:54:05.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AlumnoDto.cs",
+              "DocumentMoniker": "C:\\Users\\diego\\Desktop\\CRUD\\API\\Models\\Dtos\\AlumnoDto.cs",
+              "RelativeDocumentMoniker": "API\\Models\\Dtos\\AlumnoDto.cs",
+              "ToolTip": "C:\\Users\\diego\\Desktop\\CRUD\\API\\Models\\Dtos\\AlumnoDto.cs",
+              "RelativeToolTip": "API\\Models\\Dtos\\AlumnoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T22:53:49.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Alumnos.razor",
+              "DocumentMoniker": "C:\\Users\\diego\\Desktop\\CRUD\\ClienteBlazorWASM\\Pages\\Alumnos.razor",
+              "RelativeDocumentMoniker": "ClienteBlazorWASM\\Pages\\Alumnos.razor",
+              "ToolTip": "C:\\Users\\diego\\Desktop\\CRUD\\ClienteBlazorWASM\\Pages\\Alumnos.razor",
+              "RelativeToolTip": "ClienteBlazorWASM\\Pages\\Alumnos.razor",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAKQAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-12T17:22:09.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormularioAlumno.razor",
+              "DocumentMoniker": "C:\\Users\\diego\\Desktop\\CRUD\\ClienteBlazorWASM\\Pages\\FormularioAlumno.razor",
+              "RelativeDocumentMoniker": "ClienteBlazorWASM\\Pages\\FormularioAlumno.razor",
+              "ToolTip": "C:\\Users\\diego\\Desktop\\CRUD\\ClienteBlazorWASM\\Pages\\FormularioAlumno.razor",
+              "RelativeToolTip": "ClienteBlazorWASM\\Pages\\FormularioAlumno.razor",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAAAJ0AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-12T17:22:17.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormGroup.razor",
+              "DocumentMoniker": "C:\\Users\\diego\\Desktop\\CRUD\\ClienteBlazorWASM\\Shared\\FormGroup.razor",
+              "RelativeDocumentMoniker": "ClienteBlazorWASM\\Shared\\FormGroup.razor",
+              "ToolTip": "C:\\Users\\diego\\Desktop\\CRUD\\ClienteBlazorWASM\\Shared\\FormGroup.razor",
+              "RelativeToolTip": "ClienteBlazorWASM\\Shared\\FormGroup.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-12T17:48:59.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ProvinciaDto.cs",
+              "DocumentMoniker": "C:\\Users\\diego\\Desktop\\CRUD\\API\\Models\\Dtos\\ProvinciaDto.cs",
+              "RelativeDocumentMoniker": "API\\Models\\Dtos\\ProvinciaDto.cs",
+              "ToolTip": "C:\\Users\\diego\\Desktop\\CRUD\\API\\Models\\Dtos\\ProvinciaDto.cs",
+              "RelativeToolTip": "API\\Models\\Dtos\\ProvinciaDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T22:53:56.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DistritoDto.cs",
+              "DocumentMoniker": "C:\\Users\\diego\\Desktop\\CRUD\\API\\Models\\Dtos\\DistritoDto.cs",
+              "RelativeDocumentMoniker": "API\\Models\\Dtos\\DistritoDto.cs",
+              "ToolTip": "C:\\Users\\diego\\Desktop\\CRUD\\API\\Models\\Dtos\\DistritoDto.cs",
+              "RelativeToolTip": "API\\Models\\Dtos\\DistritoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T22:53:55.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ConfirmacionBorrado.razor",
+              "DocumentMoniker": "C:\\Users\\diego\\Desktop\\CRUD\\ClienteBlazorWASM\\Shared\\ConfirmacionBorrado.razor",
+              "RelativeDocumentMoniker": "ClienteBlazorWASM\\Shared\\ConfirmacionBorrado.razor",
+              "ToolTip": "C:\\Users\\diego\\Desktop\\CRUD\\ClienteBlazorWASM\\Shared\\ConfirmacionBorrado.razor",
+              "RelativeToolTip": "ClienteBlazorWASM\\Shared\\ConfirmacionBorrado.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-12T20:31:11.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DepartamentoDto.cs",
+              "DocumentMoniker": "C:\\Users\\diego\\Desktop\\CRUD\\API\\Models\\Dtos\\DepartamentoDto.cs",
+              "RelativeDocumentMoniker": "API\\Models\\Dtos\\DepartamentoDto.cs",
+              "ToolTip": "C:\\Users\\diego\\Desktop\\CRUD\\API\\Models\\Dtos\\DepartamentoDto.cs",
+              "RelativeToolTip": "API\\Models\\Dtos\\DepartamentoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T22:53:54.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Provincia.cs",
+              "DocumentMoniker": "C:\\Users\\diego\\Desktop\\CRUD\\API\\Models\\Provincia.cs",
+              "RelativeDocumentMoniker": "API\\Models\\Provincia.cs",
+              "ToolTip": "C:\\Users\\diego\\Desktop\\CRUD\\API\\Models\\Provincia.cs",
+              "RelativeToolTip": "API\\Models\\Provincia.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T22:53:44.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Distrito.cs",
+              "DocumentMoniker": "C:\\Users\\diego\\Desktop\\CRUD\\API\\Models\\Distrito.cs",
+              "RelativeDocumentMoniker": "API\\Models\\Distrito.cs",
+              "ToolTip": "C:\\Users\\diego\\Desktop\\CRUD\\API\\Models\\Distrito.cs",
+              "RelativeToolTip": "API\\Models\\Distrito.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T22:53:43.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Departamento.cs",
+              "DocumentMoniker": "C:\\Users\\diego\\Desktop\\CRUD\\API\\Models\\Departamento.cs",
+              "RelativeDocumentMoniker": "API\\Models\\Departamento.cs",
+              "ToolTip": "C:\\Users\\diego\\Desktop\\CRUD\\API\\Models\\Departamento.cs",
+              "RelativeToolTip": "API\\Models\\Departamento.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T22:53:42.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Alumno.cs",
+              "DocumentMoniker": "C:\\Users\\diego\\Desktop\\CRUD\\API\\Models\\Alumno.cs",
+              "RelativeDocumentMoniker": "API\\Models\\Alumno.cs",
+              "ToolTip": "C:\\Users\\diego\\Desktop\\CRUD\\API\\Models\\Alumno.cs",
+              "RelativeToolTip": "API\\Models\\Alumno.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T22:53:33.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Provincia.cs",
+              "DocumentMoniker": "C:\\Users\\diego\\Desktop\\CRUD\\ClienteBlazorWASM\\Models\\Provincia.cs",
+              "RelativeDocumentMoniker": "ClienteBlazorWASM\\Models\\Provincia.cs",
+              "ToolTip": "C:\\Users\\diego\\Desktop\\CRUD\\ClienteBlazorWASM\\Models\\Provincia.cs",
+              "RelativeToolTip": "ClienteBlazorWASM\\Models\\Provincia.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T21:45:30.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ModeloError.cs",
+              "DocumentMoniker": "C:\\Users\\diego\\Desktop\\CRUD\\ClienteBlazorWASM\\Models\\ModeloError.cs",
+              "RelativeDocumentMoniker": "ClienteBlazorWASM\\Models\\ModeloError.cs",
+              "ToolTip": "C:\\Users\\diego\\Desktop\\CRUD\\ClienteBlazorWASM\\Models\\ModeloError.cs",
+              "RelativeToolTip": "ClienteBlazorWASM\\Models\\ModeloError.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T21:45:29.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Distrito.cs",
+              "DocumentMoniker": "C:\\Users\\diego\\Desktop\\CRUD\\ClienteBlazorWASM\\Models\\Distrito.cs",
+              "RelativeDocumentMoniker": "ClienteBlazorWASM\\Models\\Distrito.cs",
+              "ToolTip": "C:\\Users\\diego\\Desktop\\CRUD\\ClienteBlazorWASM\\Models\\Distrito.cs",
+              "RelativeToolTip": "ClienteBlazorWASM\\Models\\Distrito.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T21:45:28.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Departamento.cs",
+              "DocumentMoniker": "C:\\Users\\diego\\Desktop\\CRUD\\ClienteBlazorWASM\\Models\\Departamento.cs",
+              "RelativeDocumentMoniker": "ClienteBlazorWASM\\Models\\Departamento.cs",
+              "ToolTip": "C:\\Users\\diego\\Desktop\\CRUD\\ClienteBlazorWASM\\Models\\Departamento.cs",
+              "RelativeToolTip": "ClienteBlazorWASM\\Models\\Departamento.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T21:45:22.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Alumno.cs",
+              "DocumentMoniker": "C:\\Users\\diego\\Desktop\\CRUD\\ClienteBlazorWASM\\Models\\Alumno.cs",
+              "RelativeDocumentMoniker": "ClienteBlazorWASM\\Models\\Alumno.cs",
+              "ToolTip": "C:\\Users\\diego\\Desktop\\CRUD\\ClienteBlazorWASM\\Models\\Alumno.cs",
+              "RelativeToolTip": "ClienteBlazorWASM\\Models\\Alumno.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T21:45:19.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\diego\\Desktop\\CRUD\\ClienteBlazorWASM\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "ClienteBlazorWASM\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\diego\\Desktop\\CRUD\\ClienteBlazorWASM\\Pages\\Home.razor",
+              "RelativeToolTip": "ClienteBlazorWASM\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-12T18:17:30.7Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

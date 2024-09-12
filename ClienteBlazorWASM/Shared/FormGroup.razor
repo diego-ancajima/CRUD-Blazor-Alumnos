@@ -1,0 +1,16 @@
+﻿<div class="form-group">
+    <div class="row">
+        <div class="col-2">
+            <label>@Label:</label>
+        </div>
+        <div class="-col-6">
+            @ChildContent
+        </div>
+    </div>
+</div>
+<br />
+
+@code {
+    [Parameter] public string Label { get; set; }
+    [Parameter] public RenderFragment ChildContent { get; set; }
+}
